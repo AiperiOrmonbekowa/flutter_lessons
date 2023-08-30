@@ -21,7 +21,9 @@ class _HomePageBodyState extends State<HomePageBody> {
     clientSum = clientSum + clientFirstIndex + clientSecondIndex;
     setState(() {});
     result();
-    manageApplication();
+    if (clientSum < 50) {
+      manageApplication();
+    }
   }
 
   int appFirstIndex = 1;
@@ -35,10 +37,15 @@ class _HomePageBodyState extends State<HomePageBody> {
         return const AlertDialog(content: CircularProgressIndicator());
       },
     );
-    appAction();
-    Future.delayed(const Duration(seconds: 1)).whenComplete(() {
-      Navigator.pop(context);
-    });
+
+    Future.delayed(
+      const Duration(seconds: 1),
+    ).whenComplete(
+      () {
+        Navigator.pop(context);
+        appAction();
+      },
+    );
   }
 
   void appAction() {
@@ -53,10 +60,11 @@ class _HomePageBodyState extends State<HomePageBody> {
   void result() {
     if (clientSum >= 50) {
       showDialog(
+        barrierColor: Colors.pinkAccent,
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: const Text('Ой азамат кыйынсынго!'),
+            title: const Text('Ой азамат кыйынсынго! 🤗'),
             actions: [
               TextButton(
                 onPressed: () {
@@ -68,12 +76,14 @@ class _HomePageBodyState extends State<HomePageBody> {
           );
         },
       );
+      return;
     } else if (appSum >= 50) {
       showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: const Text('Апей женилип калдынго :( Кел кайра ойнойбуз! '),
+            title:
+                const Text('Апей женилип калдынго 🙁 \n Кел кайра ойнойбуз :)'),
             actions: [
               TextButton(
                 onPressed: () {
@@ -85,6 +95,7 @@ class _HomePageBodyState extends State<HomePageBody> {
           );
         },
       );
+      return;
     }
   }
 
@@ -148,23 +159,13 @@ class _HomePageBodyState extends State<HomePageBody> {
                 width: 20,
               ),
               Expanded(
-                child: InkWell(
-                  onTap: () {
-                    appAction();
-                  },
-                  child: Image.asset('assets/icons/dice$appFirstIndex.png'),
-                ),
+                child: Image.asset('assets/icons/dice$appFirstIndex.png'),
               ),
               const SizedBox(
                 width: 20,
               ),
               Expanded(
-                child: InkWell(
-                  onTap: () {
-                    appAction();
-                  },
-                  child: Image.asset('assets/icons/dice$appSecondIndex.png'),
-                ),
+                child: Image.asset('assets/icons/dice$appSecondIndex.png'),
               ),
               const SizedBox(
                 width: 20,
