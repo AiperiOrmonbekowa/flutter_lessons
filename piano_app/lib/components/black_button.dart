@@ -1,35 +1,38 @@
 import 'package:flutter/material.dart';
 
-class PianoWhiteButton extends StatelessWidget {
-  const PianoWhiteButton({
-    super.key,
+class PianoBlackButton extends StatelessWidget {
+  const PianoBlackButton({
+    Key? key,
     required this.text,
-  });
+    this.visible = true,
+    this.leftMargin = 0,
+  }) : super(key: key);
+
   final String text;
+  final bool visible;
+  final double leftMargin;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 4),
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-          textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-          fixedSize: const Size(80, 270),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(4),
+      padding: EdgeInsets.only(left: leftMargin),
+      child: SizedBox(
+        height: 130,
+        width: 60,
+        child: Visibility(
+          visible: visible,
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+              fixedSize: const Size(60, 130),
+              padding: const EdgeInsets.all(0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4),
+              ),
+            ),
+            onPressed: () {},
+            child: Text(text),
           ),
-        ),
-        onPressed: () {},
-        child: Column(
-          children: [
-            const Spacer(),
-            Text(text),
-            const SizedBox(
-              height: 10,
-            )
-          ],
         ),
       ),
     );
