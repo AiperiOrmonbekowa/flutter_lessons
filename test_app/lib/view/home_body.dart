@@ -14,12 +14,35 @@ class HomeBody extends StatefulWidget {
 
 class _HomeBodyState extends State<HomeBody> {
   final List suroolor = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10];
+  List<bool> jooptor = [];
+
   int index = 0;
-  void incrementindex() {
+  void incrementindex(bool joop) {
+    if (jooptor.length <= 10) {
+      final result = joop == suroolor[index].joop;
+      jooptor.add(result);
+    }
     if (index < 9) {
       index++;
-      setState(() {});
+    } else {
+      // tapshyrma
+      List<bool> kataJooptor = [];
+      List<bool> tuuraJooptor = [];
+
+      jooptor.map((e) => e == true ? tuuraJooptor.add(e) : null).toList();
+      jooptor.map((e) => e == false ? kataJooptor.add(e) : null).toList();
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: const Text('Тест аягына чыкты'),
+            content: Text(
+                'tuura jooptor ${tuuraJooptor.length}, kata jooptor ${kataJooptor.length}'),
+          );
+        },
+      );
     }
+    setState(() {});
   }
 
   @override
@@ -36,7 +59,7 @@ class _HomeBodyState extends State<HomeBody> {
           color: Colors.green,
           text: 'Туура',
           baskanda: () {
-            incrementindex();
+            incrementindex(true);
           },
         ),
         const SizedBox(
@@ -46,26 +69,39 @@ class _HomeBodyState extends State<HomeBody> {
           color: Colors.red,
           text: 'Туура эмес',
           baskanda: () {
-            incrementindex();
+            incrementindex(false);
           },
         ),
         const Spacer(
           flex: 3,
         ),
-        const Row(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(
-              Icons.check,
-              color: Colors.green,
-            ),
-            Icon(
-              Icons.close,
-              color: Colors.red,
-            ),
-            SizedBox(
-              height: 40,
+            Row(
+                children: jooptor
+                    .map((e) => Icon(
+                          e ? Icons.check : Icons.close,
+                          color: e ? Colors.green : Colors.red,
+                        ),
+                        )
+                    .toList()),
+            IconButton(
+              iconSize: 40,
+              onPressed: () {
+                index = 0;
+                jooptor.clear();
+                setState(() {});
+              },
+              icon: const Icon(
+                Icons.replay,
+                color: Colors.white,
+              ),
             ),
           ],
+        ),
+        const SizedBox(
+          height: 40,
         ),
       ],
     );
