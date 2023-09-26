@@ -10,7 +10,7 @@ class RemoveAddCard extends StatelessWidget {
     required this.onPressedAdd,
   }) : super(key: key);
   final String text;
-  final int maani;
+  final double maani;
   final void Function()? onPressedRemove;
   final void Function()? onPressedAdd;
 
@@ -30,7 +30,7 @@ class RemoveAddCard extends StatelessWidget {
               ),
             ),
             Text(
-              '${maani}',
+              '${maani.toInt()}',
               style: const TextStyle(
                   fontSize: 60,
                   color: Colors.white,

@@ -18,6 +18,7 @@ class HightCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
               'HIGHT',
@@ -47,7 +48,7 @@ class HightCard extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: CupertinoSlider(
-                value: 180,
+                value: value,
                 onChanged: onChanged,
                 min: 30,
                 max: 230,

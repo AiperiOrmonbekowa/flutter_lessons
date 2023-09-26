@@ -3,29 +3,29 @@
 import 'package:oop/oop.dart' as oop;
 
 void main() {
- String name = 'Flutter kurs15' ;
- int san = 0;
- bool isComplated = false;
- dynamic dynamic01 = 12.2;
- double number = 21.1;
+  // ignore: unused_local_variable
+  String name = 'Flutter kurs15';
+  int san = 0;
+  bool isComplated = false;
+  dynamic dynamic01 = 12.2;
+  double number = 21.1;
 
- List <String> names = ['Manas', 'Semetei'];
- List <int> num = [1,2];
- User aktan = User('Aktan', 'Asanov', 10);
- User akylai = User('Akylai', 'Asanova', 12);
-
+  List<String> names = ['Manas', 'Semetei'];
+  List<int> num = [1, 2];
+  User aktan = User('Aktan', 'Asanov', 10);
+  User akylai = User('Akylai', 'Asanova', 12);
 }
+
 class User {
   User(
-   this.name,
-   this.lastName,
-   this.age,
+    this.name,
+    this.lastName,
+    this.age,
   );
 
- String name;
- String lastName;
- int age;
- 
+  String name;
+  String lastName;
+  int age;
 }
 
  /*
