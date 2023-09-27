@@ -4,6 +4,7 @@ void main() {
 
   reks.unChygar();
 
+  // ignore: unused_local_variable
   Cat kiskis = Cat();
   reks.name = 'kiskis';
 
