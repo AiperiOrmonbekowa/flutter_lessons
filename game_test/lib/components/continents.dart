@@ -11,7 +11,7 @@ class ContinentsCard extends StatelessWidget {
   });
 
   final Continents continent;
-
+  
   @override
   Widget build(BuildContext context) {
     return InkWell(

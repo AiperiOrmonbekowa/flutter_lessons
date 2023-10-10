@@ -22,7 +22,7 @@ class HomeView extends StatelessWidget {
           const Icon(Icons.more_vert),
           const SizedBox(
             width: 15,
-          )
+          ),
         ],
         bottom: const PreferredSize(
           preferredSize: Size(double.infinity, 3),
