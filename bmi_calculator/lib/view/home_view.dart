@@ -123,6 +123,7 @@ class _HomeViewState extends State<HomeView> {
       bottomNavigationBar: CalculateButton(
         text: 'CALCULATE',
         onPressed: () {
+          // ignore: unused_local_variable
           final bmi = calculate();
           showDialog(
             context: context,

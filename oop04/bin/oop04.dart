@@ -1,5 +1,12 @@
 void main() {
-  // final user2 = User(name: 'Aiperi', firstBame: 'Ormonbekova', age: 19, nation:' Kyrgyz', proffesion: 'Flutter developer', tuulganJeri: "Tuulgan jeri", password: '0000');
+  // ignore: unused_local_variable
+  final user = User('Aiperi', 'Ormonbekova',
+      age: 19,
+      nation: ' Kyrgyz',
+      proffesion: 'Flutter developer',
+      tuulganJeri: "Tuulgan jeri",
+      password: '0000');
+  print(user.firstBame);
 }
 
 //  Конструкторлор 2 турго болунот =>  Jonokoi constructor &&   namedConstructor
@@ -66,16 +73,16 @@ class User {
   //   required this.tuulganJeri,
   //   required this.password,
   // });
-  
+
   /// 3.1) Complex Constructor (default bar)
   /// бул жактан Jonokoi, namedConstructor, default конструкторлорду бердик
-    User(
+  User(
     this.name,
     this.firstBame, {
     required this.age,
-     this.nation = 'Kyrgyz',
+    this.nation = 'Kyrgyz',
     required this.proffesion,
-   this.tuulganJeri = 'Kyrgyzstan',
+    this.tuulganJeri = 'Kyrgyzstan',
     required this.password,
   });
 
