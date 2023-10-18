@@ -1,3 +1,5 @@
+// interhatiance => dartta extends dep koldonobyz
+
 class Animal {
   const Animal(this.name);
 
@@ -9,10 +11,11 @@ class Animal {
   }
 }
 
-class Cat extends Animal {
-  Cat(super.name);
 
-  @override
+class Cat extends Animal { //  Extends мурас алуу (генетикалык мурас)
+  Cat(super.name); // Super метод алган параметрлерди Child class Parent classka откоруп берет. 
+
+  @override // @override parent class кайра дагы озгортуп жазат.
   void unChygar() {
     print('miayy');
     super.unChygar();
@@ -40,3 +43,6 @@ void main() {
   jolbors1.unChygar();
   jolbors1.jashait();
 }
+
+/// child class Parent class тын даталарын каалагандай озгорто албайт.
+/// денесин методдорун параметрлерин озгорто алабыз.
