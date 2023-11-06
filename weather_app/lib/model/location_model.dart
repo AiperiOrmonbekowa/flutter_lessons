@@ -27,7 +27,7 @@ class Location {
         lat: json['lat'],
         lon: json['lon'],
         tzId: json['tz_id'],
-        localTimeEpoch: json['local_time_epoch'],
-        localtime: json['local_time']);
+        localTimeEpoch: json['localtime_epoch'],
+        localtime: json['localtime']);
   }
 }

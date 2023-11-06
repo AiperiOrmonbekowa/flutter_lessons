@@ -16,7 +16,7 @@ class WetherInfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 65,
+      height: 60,
       child: Card(
         color: AppColors.whiteColor.withOpacity(0.5),
         shadowColor: Colors.transparent,

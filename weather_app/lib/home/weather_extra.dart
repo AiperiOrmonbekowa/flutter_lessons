@@ -15,7 +15,7 @@ class WeatherExtra extends StatelessWidget {
           TabBar(
             isScrollable: true,
             labelStyle: const TextStyle(
-              fontSize: 15,
+              fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
             labelColor: AppColors.blackColor,
@@ -31,7 +31,7 @@ class WeatherExtra extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 115,
+            height: 130,
             child: ListView.builder(
               itemCount: 7,
               scrollDirection: Axis.horizontal,

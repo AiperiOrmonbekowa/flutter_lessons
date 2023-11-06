@@ -21,8 +21,8 @@ class WeatherInfoCards extends StatelessWidget {
       children: [
         WetherInfoCard(
           icon: SvgPicture.asset(
-            AssetsConst.rain,
-            height: 70,
+            AssetsConst.rainFall,
+            height: 60,
             fit: BoxFit.cover,
           ),
           title: 'RainFall',
@@ -31,7 +31,7 @@ class WeatherInfoCards extends StatelessWidget {
         WetherInfoCard(
           icon: SvgPicture.asset(
             AssetsConst.wind,
-            height: 70,
+            height: 60,
             fit: BoxFit.cover,
           ),
           title: 'Wind',

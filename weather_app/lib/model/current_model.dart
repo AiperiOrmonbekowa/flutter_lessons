@@ -31,21 +31,21 @@ class Current {
   final double feelsLikeC;
   final num visKM;
 
-  factory Current.fromWeatherApi(Map<String, dynamic> json) {
+  factory Current.fromWeatherApi(Map<String, dynamic> sryo) {
     return Current(
-      lastUpdated: json['last_updated'],
-      tempC: json['temp_c'],
-      isDay: json['is_day'],
-      condition: Condition.fromWeatherApi(json['condition']),
-      windMPH: json['wind_mph'],
-      windKPH: json['wind_kph'],
-      windDir: json['wind_dir'],
-      precipMM: json['precip_mm'],
-      precipIn: json['precip_in'],
-      humidity: json['humidity'],
-      cloud: json['cloud'],
-      feelsLikeC: json['feelslike_c'],
-      visKM: json['vis_km'],
+      lastUpdated: sryo['last_updated'],
+      tempC: sryo['temp_c'],
+      isDay: sryo['is_day'],
+      condition: Condition.fromWeatherApi(sryo['condition']),
+      windMPH: sryo['wind_mph'],
+      windKPH: sryo['wind_kph'],
+      windDir: sryo['wind_dir'],
+      precipMM: sryo['precip_mm'],
+      precipIn: sryo['precip_in'],
+      humidity: sryo['humidity'],
+      cloud: sryo['cloud'],
+      feelsLikeC: sryo['feelslike_c'],
+      visKM: sryo['vis_km'],
     );
   }
 }

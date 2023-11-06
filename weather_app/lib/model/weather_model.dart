@@ -1,9 +1,8 @@
 import 'package:weather_app/model/current_model.dart';
 import 'package:weather_app/model/location_model.dart';
-import 'package:weather_app/model/mock_data.dart';
 
 class Weather {
-  Weather({
+  const Weather({
     required this.current,
     required this.location,
   });
@@ -17,6 +16,4 @@ class Weather {
       location: Location.fromWeatherApi(json['location']),
     );
   }
-
-  final mocWeather = Weather.fromJson(data);
 }
