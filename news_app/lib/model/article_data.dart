@@ -22,7 +22,7 @@ class AtricleData {
   factory AtricleData.fromJson(Map<String, dynamic> map) {
     return AtricleData(
       status: map['status'] as String,
-      totalResults: map['totalResults'] as int,
+      totalResults: map['totalResults'] as int, 
       articles: List<Article>.from(
         (map['articles'] as List<Map<String, Object?>>).map<Article>(
           (x) => Article.fromJson(x),
