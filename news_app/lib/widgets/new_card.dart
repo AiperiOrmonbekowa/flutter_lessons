@@ -23,6 +23,9 @@ class NewsCard extends StatelessWidget {
                 child: Image.network(
                   article.urlToImage ??
                       'https://2348.cupe.ca/files/2012/01/News.gif',
+                  errorBuilder: (context, object, stract) {
+                    return const SizedBox.shrink();
+                  },
                   fit: BoxFit.fitWidth,
                 ),
               ),
