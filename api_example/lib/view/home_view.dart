@@ -28,6 +28,7 @@ class HomeView extends StatelessWidget {
           return const CircularProgressIndicator();
         } else if(snapshot.hasData) {
           final api = snapshot.hasData;
+         
           return  Column(children: [
           Text('${api.id}')
           ],
