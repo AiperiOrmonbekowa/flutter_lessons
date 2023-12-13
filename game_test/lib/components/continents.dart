@@ -11,7 +11,7 @@ class ContinentsCard extends StatelessWidget {
   });
 
   final Continents continent;
-  
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -31,6 +31,7 @@ class ContinentsCard extends StatelessWidget {
             Expanded(
               child: SvgPicture.asset(
                 continent.icon,
+                // ignore: deprecated_member_use
                 color: continent.color,
               ),
             ),

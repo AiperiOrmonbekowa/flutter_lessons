@@ -31,12 +31,11 @@ class HomeView extends StatelessWidget {
             if (snapshot.hasError) {
               return const CircularProgressIndicator();
             } else if (snapshot.hasData) {
-              final api = snapshot.hasData;
-
               return const Column(
                 children: [Text('')],
               );
             }
+            return const Text('');
           },
         ),
       ),
