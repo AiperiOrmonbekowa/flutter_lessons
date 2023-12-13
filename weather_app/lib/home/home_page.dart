@@ -7,8 +7,7 @@ import 'package:weather_app/constants/app_icons.dart';
 import 'package:weather_app/home/home_body.dart';
 import 'package:weather_app/model/weather_model.dart';
 
-const url = 
-    'http://api.weatherapi.com/v1/current.json?key=e9d7452a41614cdea32164320231910&q=bishkek';
+const url = 'http://api.weatherapi.com/v1/current.json?key=e9d7452a41614cdea32164320231910&q=bishkek';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,7 +29,7 @@ class _HomePageState extends State<HomePage> {
       throw Exception('Bit kata boldu, kata: $e');
     }
   }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
