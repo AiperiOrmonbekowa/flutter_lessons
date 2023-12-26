@@ -1,5 +1,6 @@
 import 'package:chat_app/components/animation/custom_animation.dart';
 import 'package:chat_app/components/buttons/custom_elevated_button.dart';
+import 'package:chat_app/login/login.dart';
 import 'package:chat_app/register/view/register_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -30,14 +31,21 @@ class WelcomeView extends StatelessWidget {
               height: 20,
             ),
             CustomElevatedButton(
-              text: 'login',
-              onPressed: () {},
+              text: 'Login',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LoginView(),
+                  ),
+                );
+              },
             ),
             const SizedBox(
               height: 20,
             ),
             CustomElevatedButton(
-                text: 'register',
+                text: 'Register',
                 onPressed: () {
                   Navigator.push(
                     context,

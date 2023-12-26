@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:chat_app/components/components.dart';
 
-class RegisterView extends StatefulWidget {
-  const RegisterView({super.key});
+class LoginView extends StatefulWidget {
+  const LoginView({super.key});
 
   @override
-  State<RegisterView> createState() => _RegisterViewState();
+  State<LoginView> createState() => _LoginViewState();
 }
 
-class _RegisterViewState extends State<RegisterView> {
+class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,12 +35,11 @@ class _RegisterViewState extends State<RegisterView> {
             const SizedBox(
               height: 20,
             ),
-            const CustomTextField(labelText: 'confirm password'),
             const SizedBox(
               height: 20,
             ),
             CustomElevatedButton(
-              text: 'Register',
+              text: 'Login',
               onPressed: () {},
             )
           ],

@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+class CustomTextField extends StatelessWidget {
+  const CustomTextField({
+    Key? key,
+    required this.labelText,
+    this.controller,
+  }) : super(key: key);
+  final String labelText;
+  final TextEditingController? controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      decoration: InputDecoration(
+        labelText: labelText,
+        border: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(30))),
+      ),
+    );
+  }
+}
