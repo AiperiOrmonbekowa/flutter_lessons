@@ -1,3 +1,4 @@
+import 'package:chat_app/home/view/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:chat_app/components/components.dart';
@@ -41,7 +42,11 @@ class _RegisterViewState extends State<RegisterView> {
             ),
             CustomElevatedButton(
               text: 'Register',
-              onPressed: () {},
+              onPressed: () {
+                   Navigator.push<void>(context, MaterialPageRoute(builder: (context) => const HomeView(),
+                ),
+                );
+              },
             )
           ],
         ),

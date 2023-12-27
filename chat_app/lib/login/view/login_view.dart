@@ -1,3 +1,4 @@
+import 'package:chat_app/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:chat_app/components/components.dart';
@@ -40,7 +41,11 @@ class _LoginViewState extends State<LoginView> {
             ),
             CustomElevatedButton(
               text: 'Login',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push<void>(context, MaterialPageRoute(builder: (context) => const HomeView(),
+                ),
+                );
+              },
             )
           ],
         ),
