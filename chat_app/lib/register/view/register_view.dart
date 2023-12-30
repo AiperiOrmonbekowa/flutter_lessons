@@ -43,8 +43,11 @@ class _RegisterViewState extends State<RegisterView> {
             CustomElevatedButton(
               text: 'Register',
               onPressed: () {
-                   Navigator.push<void>(context, MaterialPageRoute(builder: (context) => const HomeView(),
-                ),
+                Navigator.push<void>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomeView(),
+                  ),
                 );
               },
             )
