@@ -1,0 +1,190 @@
+{
+  "project_info": {
+    "project_number": "156728441334",
+    "project_id": "chatapp-4330f",
+    "storage_bucket": "chatapp-4330f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156728441334:android:c3a5bcb989285bdc6aefd7",
+        "android_client_info": {
+          "package_name": "chatApp.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59pMeDig9UDK-j1RMRL71PQG-MadF1G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156728441334-24cr1mcfj2f1fo8autvqbu1q381evhkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flashchat.comGetxCoba"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156728441334:android:86cf373ac09bfdb06aefd7",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59pMeDig9UDK-j1RMRL71PQG-MadF1G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156728441334-24cr1mcfj2f1fo8autvqbu1q381evhkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flashchat.comGetxCoba"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156728441334:android:6fc964e1c0f7d8ab6aefd7",
+        "android_client_info": {
+          "package_name": "com.example.getx_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59pMeDig9UDK-j1RMRL71PQG-MadF1G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156728441334-24cr1mcfj2f1fo8autvqbu1q381evhkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flashchat.comGetxCoba"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156728441334:android:a3fbd69a365389bc6aefd7",
+        "android_client_info": {
+          "package_name": "com.example.register_google"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59pMeDig9UDK-j1RMRL71PQG-MadF1G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156728441334-24cr1mcfj2f1fo8autvqbu1q381evhkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flashchat.comGetxCoba"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156728441334:android:b0e79ad0723b886b6aefd7",
+        "android_client_info": {
+          "package_name": "flash_chat.com_getx_coba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD59pMeDig9UDK-j1RMRL71PQG-MadF1G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156728441334-1e515g25uov7f2st9353hsvv4p943e6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156728441334-24cr1mcfj2f1fo8autvqbu1q381evhkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flashchat.comGetxCoba"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
