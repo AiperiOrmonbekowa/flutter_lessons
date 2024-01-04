@@ -12,10 +12,12 @@ class HomeCubit extends Cubit<HomeState> {
     await Future.delayed(const Duration(seconds: 1));
     // try аракет жасап кор
     try {
-      // String value ni numberge kotor
-      final parsedValue = num.parse(value);
-      log(parsedValue.toString());
-      emit(HomeSucsesState());
-    } catch (e) {}
+      final parsedValue = num.parse(value); // String value ni numberge kotor
+      log(parsedValue.toString()); // которулган  number ди консолго жазуу
+      emit(HomeSucsesState()); // ийгиликтуу аяктады ui га кабар бер
+    } catch (e) {
+      log(e.toString());
+      emit(HomeErrorState()); // бир ката болду ui га кабар бер
+    }
   }
 }
