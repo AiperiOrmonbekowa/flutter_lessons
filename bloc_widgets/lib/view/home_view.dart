@@ -5,6 +5,11 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Bloc widget'),
+        centerTitle: true,
+      ),
+    );
   }
 }
