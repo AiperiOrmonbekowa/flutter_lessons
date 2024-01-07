@@ -10,6 +10,11 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   }
 
   Future<void> _login(AuthLoginEvent emit, Emitter<AuthState> emitter) async {
-    emit{AuthenticetedState(User(email: event.email, password: event.password));}
+    emit;{
+      var event;
+      AuthenticetedState(
+        User(email: event.email, password: event.password),
+        );
+        }
   }
 }
